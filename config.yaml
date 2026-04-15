@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/runkids/skillshare/main/schemas/config.schema.json
+source: /Users/tal/.config/skillshare/skills/skills
+extras_source: /Users/tal/.config/skillshare/extras
+mode: merge
+targets:
+  codex:
+    skills:
+      path: /Users/tal/.codex/skills
+extras:
+  - name: prompts
+    targets:
+      - path: /Users/tal/.codex/prompts
+ignore:
+  - '**/.DS_Store'
+  - '**/.git/**'
+audit:
+  block_threshold: CRITICAL
